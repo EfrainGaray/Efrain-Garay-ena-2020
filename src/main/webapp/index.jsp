@@ -3,36 +3,10 @@
     Created on : Jul 25, 2020, 12:50:11 AM
     Author     : efraingaray
 --%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html lang="en">
-
-    <head>
-
-        <title>Issue Tracker V1</title>
-        <!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 11]>
-                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-                <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-                <![endif]-->
-        <!-- Meta -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="" />
-        <meta name="keywords" content="">
-        <!-- Favicon icon -->
-        <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-
-        <!-- vendor css -->
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
-    <body>
-
-        <!-- [ auth-signin ] start -->
-        <div class="auth-wrapper">
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:import url="includes/header.jsp"/>
+        <div class="auth-wrapper"> 
             <div class="auth-content">
                 <div class="card">
                     <div class="row align-items-center text-center">
@@ -55,24 +29,11 @@
                                 <button class="btn btn-block btn-primary mb-4">
                                     Enviar
                                 </button>
-                                <!--p class="mb-2 text-muted">Forgot password? <a href="auth-reset-password.html" class="f-w-400">Reset</a></p>
-                                <p class="mb-0 text-muted">Don’t have an account? <a href="auth-signup.html" class="f-w-400">Signup</a></p-->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- [ auth-signin ] end -->
 
-        <!-- Required Js -->
-        <script src="assets/js/vendor-all.min.js"></script>
-        <script src="assets/js/plugins/bootstrap.min.js"></script>
-        <script src="assets/js/ripple.js"></script>
-        <script src="assets/js/pcoded.js"></script>
-
-
-
-    </body>
-
-</html>
+<c:import url="includes/footer.jsp"/>
